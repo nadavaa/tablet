@@ -63,6 +63,18 @@ header{
 
 #logo{
     height: 70px;
+    animation-name: logo;
+    animation-duration: 2s;
+}
+@keyframes logo {
+    from{
+        height: 0px;
+        opacity: 0;
+    }
+    to{
+        height: 70px;
+        opacity: 1;
+    }
 }
 
 nav a{
@@ -147,7 +159,7 @@ div {
     border-radius: 15px;
     padding:5px;
     background-color: #1b465f;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 
@@ -182,12 +194,11 @@ footer{
     color:black;
     bottom: 0;
     width:100%;
-    position: fixed;
     margin-top: 40px;
-    margin-bottom: 0px;
     font-size: 15px;
     
 }
+
 
 #form{
     display: grid;
@@ -226,6 +237,7 @@ footer{
   
   textarea{
     width: 70%;
+    min-width: 270px;
     height: 15vh;
     padding: 12px 20px;
     margin: 8px 0;
@@ -275,6 +287,10 @@ footer{
         font-size: 2rem;
     }
 
+    #learn{
+        font-size: 1.5rem;
+    }
+
     h2{
         font-size: 2rem;
     }
@@ -282,6 +298,7 @@ footer{
     p{
         font-size: 2rem;
     }
+
 
     #logo_head{
         display: flex;
@@ -304,10 +321,19 @@ footer{
 
     #logo{
         height: 130px;
+        animation-name: logo;
+        animation-duration: 2s;
     }
-
- 
-
+    @keyframes logo {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            height: 130px;
+            opacity: 1;
+        }
+    }
     .nav_item a{
         padding: 5px;
         margin-left: 25px;
@@ -349,7 +375,7 @@ footer{
         grid-column: 3/ span 1;
     }
 
-
+    
 
 }
 
